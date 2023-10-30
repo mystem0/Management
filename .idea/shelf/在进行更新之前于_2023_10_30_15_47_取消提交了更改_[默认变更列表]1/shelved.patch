@@ -1,0 +1,224 @@
+Index: .idea/artifacts/brand_case_war_exploded.xml
+===================================================================
+diff --git a/.idea/artifacts/brand_case_war_exploded.xml b/.idea/artifacts/brand_case_war_exploded.xml
+deleted file mode 100644
+--- a/.idea/artifacts/brand_case_war_exploded.xml	
++++ /dev/null	
+@@ -1,29 +0,0 @@
+-<component name="ArtifactManager">
+-  <artifact type="exploded-war" name="brand-case:war exploded">
+-    <output-path>$PROJECT_DIR$/target/brand-case-1.0-SNAPSHOT</output-path>
+-    <properties id="maven-jee-properties">
+-      <options>
+-        <exploded>true</exploded>
+-        <module>brand-case</module>
+-        <packaging>war</packaging>
+-      </options>
+-    </properties>
+-    <root id="root">
+-      <element id="directory" name="WEB-INF">
+-        <element id="directory" name="classes">
+-          <element id="module-output" name="brand-case" />
+-        </element>
+-        <element id="directory" name="lib">
+-          <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.5.5" />
+-          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.37" />
+-          <element id="library" level="project" name="Maven: com.alibaba:fastjson:1.2.62" />
+-          <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.13" />
+-        </element>
+-      </element>
+-      <element id="directory" name="META-INF">
+-        <element id="file-copy" path="$PROJECT_DIR$/target/brand-case-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+-      </element>
+-      <element id="javaee-facet-resources" facet="brand-case/web/Web" />
+-    </root>
+-  </artifact>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml b/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml	
++++ /dev/null	
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: javax.servlet:javax.servlet-api:3.1.0">
+-    <CLASSES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/artifacts/brand_case_war.xml
+===================================================================
+diff --git a/.idea/artifacts/brand_case_war.xml b/.idea/artifacts/brand_case_war.xml
+deleted file mode 100644
+--- a/.idea/artifacts/brand_case_war.xml	
++++ /dev/null	
+@@ -1,14 +0,0 @@
+-<component name="ArtifactManager">
+-  <artifact type="war" name="brand-case:war">
+-    <output-path>$PROJECT_DIR$/target</output-path>
+-    <properties id="maven-jee-properties">
+-      <options>
+-        <module>brand-case</module>
+-        <packaging>war</packaging>
+-      </options>
+-    </properties>
+-    <root id="archive" name="brand-case-1.0-SNAPSHOT.war">
+-      <element id="artifact" artifact-name="brand-case:war exploded" />
+-    </root>
+-  </artifact>
+-</component>
+\ No newline at end of file
+Index: brand-case.iml
+===================================================================
+diff --git a/brand-case.iml b/brand-case.iml
+deleted file mode 100644
+--- a/brand-case.iml	
++++ /dev/null	
+@@ -1,36 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+-  <component name="FacetManager">
+-    <facet type="web" name="Web">
+-      <configuration>
+-        <descriptors>
+-          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/web.xml" />
+-        </descriptors>
+-        <webroots>
+-          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+-        </webroots>
+-        <sourceRoots>
+-          <root url="file://$MODULE_DIR$/src/main/java" />
+-          <root url="file://$MODULE_DIR$/src/main/resources" />
+-        </sourceRoots>
+-      </configuration>
+-    </facet>
+-  </component>
+-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+-    <output url="file://$MODULE_DIR$/target/classes" />
+-    <output-test url="file://$MODULE_DIR$/target/test-classes" />
+-    <content url="file://$MODULE_DIR$">
+-      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
+-      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
+-      <excludeFolder url="file://$MODULE_DIR$/target" />
+-    </content>
+-    <orderEntry type="inheritedJdk" />
+-    <orderEntry type="sourceFolder" forTests="false" />
+-    <orderEntry type="library" scope="PROVIDED" name="Maven: javax.servlet:javax.servlet-api:3.1.0" level="project" />
+-    <orderEntry type="library" name="Maven: org.mybatis:mybatis:3.5.5" level="project" />
+-    <orderEntry type="library" name="Maven: mysql:mysql-connector-java:5.1.37" level="project" />
+-    <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.2.62" level="project" />
+-    <orderEntry type="library" name="Maven: com.alibaba:druid:1.1.13" level="project" />
+-  </component>
+-</module>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_alibaba_druid_1_1_13.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__com_alibaba_druid_1_1_13.xml b/.idea/libraries/Maven__com_alibaba_druid_1_1_13.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__com_alibaba_druid_1_1_13.xml	
++++ /dev/null	
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: com.alibaba:druid:1.1.13">
+-    <CLASSES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/com/alibaba/druid/1.1.13/druid-1.1.13.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/com/alibaba/druid/1.1.13/druid-1.1.13-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/com/alibaba/druid/1.1.13/druid-1.1.13-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml b/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__org_mybatis_mybatis_3_5_5.xml	
++++ /dev/null	
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: org.mybatis:mybatis:3.5.5">
+-    <CLASSES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/org/mybatis/mybatis/3.5.5/mybatis-3.5.5.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/org/mybatis/mybatis/3.5.5/mybatis-3.5.5-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/org/mybatis/mybatis/3.5.5/mybatis-3.5.5-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml b/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_37.xml	
++++ /dev/null	
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: mysql:mysql-connector-java:5.1.37">
+-    <CLASSES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/mysql/mysql-connector-java/5.1.37/mysql-connector-java-5.1.37-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
+Index: .idea/modules.xml
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+deleted file mode 100644
+--- a/.idea/modules.xml	
++++ /dev/null	
+@@ -1,8 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="ProjectModuleManager">
+-    <modules>
+-      <module fileurl="file://$PROJECT_DIR$/brand-case.iml" filepath="$PROJECT_DIR$/brand-case.iml" />
+-    </modules>
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml
+===================================================================
+diff --git a/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml b/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml
+deleted file mode 100644
+--- a/.idea/libraries/Maven__com_alibaba_fastjson_1_2_62.xml	
++++ /dev/null	
+@@ -1,13 +0,0 @@
+-<component name="libraryTable">
+-  <library name="Maven: com.alibaba:fastjson:1.2.62">
+-    <CLASSES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/com/alibaba/fastjson/1.2.62/fastjson-1.2.62.jar!/" />
+-    </CLASSES>
+-    <JAVADOC>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/com/alibaba/fastjson/1.2.62/fastjson-1.2.62-javadoc.jar!/" />
+-    </JAVADOC>
+-    <SOURCES>
+-      <root url="jar://E:/ apache-maven-3.8.1/apache-maven-3.8.1/repostry/com/alibaba/fastjson/1.2.62/fastjson-1.2.62-sources.jar!/" />
+-    </SOURCES>
+-  </library>
+-</component>
+\ No newline at end of file
