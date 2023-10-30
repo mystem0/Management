@@ -1,7 +1,8 @@
-# GitTest
+# Management
 
 #### 介绍
 首次使用Git
+element ui+Servlet进行旗下公司状态的简单管理
 
 #### 软件架构
 
