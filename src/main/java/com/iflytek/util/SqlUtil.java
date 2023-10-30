@@ -30,10 +30,10 @@ public class SqlUtil {
         }
         if (companyName != null && !companyName.equals("")) {
             if (flag) {
-                sql.append(" where company_name=? ");
+                sql.append(" where company_name= ?");
                 flag = false;
             } else {
-                sql.append(" and company_name=? ");
+                sql.append(" and company_name= ?");
             }
         }
 
